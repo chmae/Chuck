@@ -1,0 +1,211 @@
+/* le titre est en italique de couleur bleu*/
+h3{
+    font-style:italic;
+    color:blue; 
+    border: 1px solid  #CCCCCC;
+}
+
+body{
+    background-color:#838892 ;
+    width : 100%;
+    line-height: normal;
+    margin :auto;
+}
+
+main{
+    display: flex;
+}
+
+h2{
+    text-align: center;
+    font-family: Blacki ;
+    padding :10px 0px;
+}
+
+p{
+    text-indent: 5px;
+    margin : 30px 0px 30px 0px ;
+}
+
+@font-face {
+    font-family: Blacki ;
+    src: url(source-sans-pro/SourceSansPro-Black.otf);
+}
+.pair{
+    background-color:#5BBDBF ;
+}
+
+.impair{
+    background-color: #FF5850;
+}
+#idbeware{
+    height: 300px;
+    float: right;
+    margin-right: 5px;
+    clear: left;
+}
+.skill{
+    color: red;
+    font-style: italic;
+}
+
+a{
+   text-decoration:none; 
+   padding-left: 10px;
+   padding-right: 10px;
+   border-left: 2px solid black;
+}
+a:visited{
+    color :#0088FF;
+}
+ a:hover{
+    color :orange;
+ }
+ table>thead th{
+    background-color: #00AAFF;
+ }
+
+ table>.skill{
+    color : #640051;
+    padding :0px 5px;
+ }
+ tbody>:nth-child(even){
+    background-color: #CCC;
+ }
+
+ tbody>:nth-child(odd){
+    background-color: white;
+ }
+ #idjeune{
+    float: left;
+    height: 150px;
+    margin-right: 5px;
+ }
+.sport{
+    clear: both;
+}
+.image{
+    position:fixed;
+    right: 20px;
+}
+nav{
+    width: 75%;
+    height: 50px;
+    display: flex; /*accueil, l'explication globale(avantages,inconvé), Conseils, Réseaux sociaux impact +(stats)
+    flex-direction: row; /* met les enfants de nav positioné de haut en bas*/
+    justify-content: flex-end;
+    
+}
+nav>div>a{
+        background-color: #5BBDBF;
+}
+nav a {
+    align-items: stretch;
+}
+
+nav>div{
+    display: flex;
+    position: relative;
+    align-items: stretch;
+ 
+   
+
+}
+.submenu{
+    position: absolute;
+    top:20px;
+    left:0px;
+    background-color: #5BBDBF;
+    display: none;
+
+}
+nav div:hover>.submenu{
+    display: block;
+}
+header{
+    display: flex;
+    background-color: white;
+    align-items: flex-end;
+}
+
+article{
+    width: 300px;
+    max-width: 900px;
+    min-width: 200px;
+    flex-shrink: 2;
+    flex-grow: 3;
+}
+article,aside{
+    background-color: #CCC;
+    
+}
+
+aside{
+    width: 200px;
+    margin-left: 10%;
+    max-width: 600px;
+    min-width: 150px;
+    flex-shrink: 1;
+    flex-grow: 2;
+}
+
+table{
+    white-space: nowrap;
+    display: block;
+    overflow-x: scroll;
+}
+td:first-child{
+    /*background-color: white;*/
+    position:sticky;
+    top:2px;
+    left:0;
+}
+th:first-child{
+    position:sticky;
+    top:2px;
+    left:0;
+}
+
+
+.puce{
+    visibility: hidden;
+}
+div:hover>.puce{
+    visibility: visible;
+}
+.burger{
+    width: 50px;
+    visibility: hidden;
+}
+
+.burger1{
+    position:relative;
+    right: 500px;
+    bottom:100px;
+}
+@media(max-width:768px) {
+    table{
+        visibility: hidden;
+    }
+  }
+
+  @media(max-width:480px) {
+    main{
+        flex-direction: column;
+    }
+    nav{
+        visibility: hidden;
+    }
+    .burger{
+        visibility: visible;
+        float:right;
+    }
+  }
+
+
+
+
+    
+
+
+
